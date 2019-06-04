@@ -6,6 +6,7 @@ backup:
 		cp -au 	~/.tmux.conf 				./tmux.conf		&& \
 		cp -au 	~/.zshrc 					./zshrc
 restore:
+	mkdir -p ~/.config/{i3,polybar,dunst}					&& \
 	cp -au 		./polybar.conf ~/.config/polybar/config 	&& \
 		cp -au 	./i3.conf 	   ~/.config/i3/config 		 	&& \
 		cp -au 	./dunst.conf   ~/.config/dunst/dunstrc 	 	&& \
